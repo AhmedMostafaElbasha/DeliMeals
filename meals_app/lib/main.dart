@@ -39,20 +39,20 @@ class MyApp extends StatelessWidget {
       },
       onGenerateRoute: (settings) {
         print(settings.arguments);
-        switch (settings.name) {
-          case CategoriesScreen.routeName:
-          return MaterialPageRoute(builder: (contextt) => CategoriesScreen());
-          break;
-          case CategoryMealsScreen.routeName:
-          return MaterialPageRoute(builder: (contextt) => CategoryMealsScreen());
-          break;
-          case MealDetailScreen.routeName:
-          return MaterialPageRoute(builder: (contextt) => MealDetailScreen());
-          break;
-          default:
-          return MaterialPageRoute(builder: (contextt) => CategoriesScreen());
-          break;
-        }
+        // switch (settings.name) {
+        //   case CategoriesScreen.routeName:
+        //   return MaterialPageRoute(builder: (contextt) => CategoriesScreen());
+        //   break;
+        //   case CategoryMealsScreen.routeName:
+        //   return MaterialPageRoute(builder: (contextt) => CategoryMealsScreen());
+        //   break;
+        //   case MealDetailScreen.routeName:
+        //   return MaterialPageRoute(builder: (contextt) => MealDetailScreen());
+        //   break;
+        //   default:
+        //   return MaterialPageRoute(builder: (contextt) => CategoriesScreen());
+        //   break;
+        // }
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(builder: (contextt) => CategoriesScreen());
