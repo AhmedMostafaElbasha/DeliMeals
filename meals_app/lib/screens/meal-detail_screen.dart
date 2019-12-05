@@ -63,7 +63,9 @@ class MealDetailScreen extends StatelessWidget {
                 ),
                 itemCount: selectedMeal.steps.length,
               )),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
             ],
           ),
         ),
